@@ -1,0 +1,50 @@
+name: Verstecken
+version: 4.0 for {Paper} 1.21.4
+api-version: 1.21.4
+main: de.minetrain.mineseek.main.Main
+
+commands:
+   start:
+      description: Start the game
+   vote-stop:
+      description: Stop the game
+   tip-ping:
+      description: Make a beep sound
+   pip:
+      description: Make a beep sound
+   tip-random:
+      description: Give a Random Tipp
+   rl:
+      description: Reload the Server  {Admin use only}
+   fritten:
+      description: Show your Points
+   save:
+      descripton: Save configs
+   del-config:
+      descripton: delit configs
+   tip-show:
+      description: Make you glow for 0,5 Secends
+   system:
+      description: Pls dont use it!
+   test:
+      descripton: test
+   test2:
+      descripton: test
+   permission:
+      descripton: permission menu
+   per:
+      descripton: permission menu
+   speed:
+      descripton: test
+   boost:
+      descripton: test
+   reset:
+      descripton: test
+   stop:
+      descripton: test
+   build:
+      descripton: test
+   gamemode:
+      descripton: test
+   dc-start:
+      descripton: test
