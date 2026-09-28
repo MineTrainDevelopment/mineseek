@@ -78,6 +78,18 @@ public enum SeekerCage  {
 		public void close() {
 			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(68, 62, 178).setType(Material.AIR);
 		}
+	},
+	
+	TERRASE(){
+		@Override
+		public void open(){
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(306, 82, 63).setType(Material.REDSTONE_BLOCK);
+		}
+		
+		@Override
+		public void close() {
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(306, 82, 63).setType(Material.AIR);
+		}
 	};
 
 	public void open(){}

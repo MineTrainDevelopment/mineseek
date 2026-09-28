@@ -124,6 +124,42 @@ public enum Barrier {
 		public void close() {
 			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(67,61,25).setType(Material.AIR);
 		}
+	},
+	
+	TERRA_ROOF(){
+		@Override
+		public void open(){
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(342, 105, 2).setType(Material.REDSTONE_BLOCK);
+		}
+		
+		@Override
+		public void close() {
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(341, 105, 2).setType(Material.REDSTONE_BLOCK);
+		}
+	},
+	
+	TERRA_STORAGE(){
+		@Override
+		public void open(){
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(339, 105, 2).setType(Material.REDSTONE_BLOCK);
+		}
+		
+		@Override
+		public void close() {
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(338, 105, 2).setType(Material.REDSTONE_BLOCK);
+		}
+	},
+	
+	TERRA_FORREST(){
+		@Override
+		public void open(){
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(335, 105, 11).setType(Material.REDSTONE_BLOCK);
+		}
+		
+		@Override
+		public void close() {
+			Bukkit.getWorld(Main.WORLD_NAME).getBlockAt(335, 107, 11).setType(Material.REDSTONE_BLOCK);
+		}
 	};
 
 	public void open(){}

@@ -41,6 +41,9 @@ public class WorldManager {
 		Barrier.HOME_ROOF.open();
 		Barrier.HOME_BASEMENT.open();
 		Barrier.HOME_BASEMENT_LIGHT.open();
+		Barrier.TERRA_ROOF.open();
+		Barrier.TERRA_FORREST.open();
+		Barrier.TERRA_STORAGE.open();
 	}
 	
 	
@@ -60,6 +63,9 @@ public class WorldManager {
 			Barrier.HOME_ROOF.close();
 			Barrier.HOME_BASEMENT.close();
 			Barrier.HOME_BASEMENT_LIGHT.open();
+			Barrier.TERRA_ROOF.close();
+			Barrier.TERRA_FORREST.close();
+			Barrier.TERRA_STORAGE.close();
 			break;
 			
 		case NORMAL:
@@ -70,6 +76,9 @@ public class WorldManager {
 			Barrier.HOME_ROOF.close();
 			Barrier.HOME_BASEMENT.open();
 			Barrier.HOME_BASEMENT_LIGHT.open();
+			Barrier.TERRA_ROOF.open();
+			Barrier.TERRA_FORREST.close();
+			Barrier.TERRA_STORAGE.close();
 			break;
 			
 		case SCHWER:
@@ -80,6 +89,9 @@ public class WorldManager {
 			Barrier.HOME_ROOF.open();
 			Barrier.HOME_BASEMENT.open();
 			Barrier.HOME_BASEMENT_LIGHT.close();
+			Barrier.TERRA_ROOF.open();
+			Barrier.TERRA_FORREST.open();
+			Barrier.TERRA_STORAGE.close();
 			break;
 			
 		case HARDCORE:
@@ -92,6 +104,9 @@ public class WorldManager {
 			Barrier.HOME_ROOF.open();
 			Barrier.HOME_BASEMENT.open();
 			Barrier.HOME_BASEMENT_LIGHT.close();
+			Barrier.TERRA_ROOF.open();
+			Barrier.TERRA_FORREST.open();
+			Barrier.TERRA_STORAGE.open();
 			break;
 		}
 	}

@@ -26,7 +26,7 @@ public enum Worlds {
 		
 		@Override
 		public void teleportSpectator(Player spectator) {
-			spectator.teleport(new Location(Bukkit.getWorld("world"), 51, 63, 47, -180, 0));
+			spectator.teleport(new Location(Bukkit.getWorld("world"), 40, 86, -25, -32, 35));
 		}
 	},
 	
@@ -39,7 +39,7 @@ public enum Worlds {
 		
 		@Override
 		public void teleportSpectator(Player spectator) {
-			spectator.teleport(new Location(Bukkit.getWorld("world"), 71, 63, 180, 90, 0));
+			spectator.teleport(new Location(Bukkit.getWorld("world"), 48, 65, 85, -36, 18));
 		}
 	},
 	
@@ -52,7 +52,20 @@ public enum Worlds {
 		
 		@Override
 		public void teleportSpectator(Player spectator) {
-			spectator.teleport(new Location(Bukkit.getWorld("world"), 199, 82, 151, -190, 0));
+			spectator.teleport(new Location(Bukkit.getWorld("world"), 255, 115, 125, 50, 30));
+		}
+	},
+	
+	TERRASE("§8Terrase"){
+		@Override
+		public void teleport(TeamManager team){
+			team.getSeekers().forEach(seeker -> seeker.teleport(new Location(Bukkit.getWorld("world"), 301, 83, 60, 60, 0)));
+			team.getHiders().forEach(hider -> hider.teleport(new Location(Bukkit.getWorld("world"), 310, 58, 28, 90, 0)));
+		}
+		
+		@Override
+		public void teleportSpectator(Player spectator) {
+			spectator.teleport(new Location(Bukkit.getWorld("world"), 272, 90, 28, -90, 36));
 		}
 	};
 	

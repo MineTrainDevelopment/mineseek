@@ -40,8 +40,6 @@ commands:
       descripton: test
    reset:
       descripton: test
-   stop:
-      descripton: test
    build:
       descripton: test
    gamemode:
